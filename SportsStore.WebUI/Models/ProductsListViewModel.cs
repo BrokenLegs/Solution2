@@ -3,6 +3,7 @@ using SportsStore.Domain.Entities;
 
 
 
+
 namespace SportsStore.WebUI.Models
 {
     public class ProductsListViewModel
