@@ -12,13 +12,6 @@ namespace SportsStore.Domain.Concrete
         public DbSet<Product> Products { get; set; }
     }
 
-
-
-
-
-
-
-
     public class SportsStoreInitializer : DropCreateDatabaseAlways<EFDbContext>
     {
         protected override void Seed(EFDbContext context)
