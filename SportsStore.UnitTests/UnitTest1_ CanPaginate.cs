@@ -7,6 +7,7 @@ using SportsStore.Domain.Entities;
 using SportsStore.Domain.Abstract;
 using Moq;
 using SportsStore.WebUI.Controllers;
+using SportsStore.WebUI.Models;
 
 namespace SportsStore.UnitTests
 {
@@ -28,11 +29,11 @@ namespace SportsStore.UnitTests
                                                 }.AsQueryable());
             // create a controller and make the page size 3 items
             ProductController controller = new ProductController(mock.Object);
-            controller.PageSize = 3;
+                                           controller.PageSize = 3;
             // Action
-            IEnumerable<Product> result = (IEnumerable<Product>)controller.List(2).Model;
+            ProductsListViewModel result = (ProductsListViewModel)controller.List(2).Model;
             // Assert
-            Product[] prodArray = result.ToArray();
+            Product[] prodArray = result.Products.ToArray();
             Assert.IsTrue(prodArray.Length == 2);
             Assert.AreEqual(prodArray[0].Name, "P4");
             Assert.AreEqual(prodArray[1].Name, "P5");
