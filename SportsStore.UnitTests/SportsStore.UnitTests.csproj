@@ -75,6 +75,9 @@
     <Compile Include="UnitTest2_createPagination.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTest1_ CanPaginate.cs" />
+    <Compile Include="UnitTest6_Category-SpecificProductCounts.cs" />
+    <Compile Include="UnitTest3_ReportingTheSelectedCategory.cs" />
+    <Compile Include="UnitTest5_GeneratingTheCategoryList.cs" />
     <Compile Include="UnitTest3_PageModelViewData.cs" />
     <Compile Include="UnitTest4_CategoryFiltering.cs" />
   </ItemGroup>
