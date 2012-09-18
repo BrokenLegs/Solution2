@@ -14,18 +14,18 @@ namespace SportsStore.UnitTests
     [TestClass]
     public class UnitTest6_Category_SpecificProductCounts
     {
-        [TestMethod]
-public void Generate_Category_Specific_Product_Count() {
-        // Arrange
-        // - create the mock repository
-        Mock<IProductRepository> mock = new Mock<IProductRepository>();
-        mock.Setup(m => m.Products).Returns(new Product[] {
-                                            new Product {ProductID = 1, Name = "P1", Category = "Cat1"},
-                                            new Product {ProductID = 2, Name = "P2", Category = "Cat2"},
-                                            new Product {ProductID = 3, Name = "P3", Category = "Cat1"},
-                                            new Product {ProductID = 4, Name = "P4", Category = "Cat2"},
-                                            new Product {ProductID = 5, Name = "P5", Category = "Cat3"}
-                                            }.AsQueryable());
+        [TestMethod]    
+        public void Generate_Category_Specific_Product_Count() {
+            // Arrange
+            // - create the mock repository
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new Product[] {
+                                                new Product {ProductID = 1, Name = "P1", Category = "Cat1"},
+                                                new Product {ProductID = 2, Name = "P2", Category = "Cat2"},
+                                                new Product {ProductID = 3, Name = "P3", Category = "Cat1"},
+                                                new Product {ProductID = 4, Name = "P4", Category = "Cat2"},
+                                                new Product {ProductID = 5, Name = "P5", Category = "Cat3"}
+                                                }.AsQueryable());
         // Arrange - create a controller and make the page size 3 items
         ProductController target = new ProductController(mock.Object);
         target.PageSize = 3;

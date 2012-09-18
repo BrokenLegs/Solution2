@@ -80,6 +80,7 @@
     <Compile Include="UnitTest5_GeneratingTheCategoryList.cs" />
     <Compile Include="UnitTest3_PageModelViewData.cs" />
     <Compile Include="UnitTest4_CategoryFiltering.cs" />
+    <Compile Include="UnitTest7_TestingTheCart.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
