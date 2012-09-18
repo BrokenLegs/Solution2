@@ -11,7 +11,7 @@ using SportsStore.WebUI.Controllers;
 namespace SportsStore.UnitTests
 {
     [TestClass]
-    public class UnitTest3_ReportingTheSelectedCategory
+    public class UnitTest7_ReportingTheSelectedCategory
     {
         [TestMethod]
         public void Indicates_Selected_Category()

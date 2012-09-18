@@ -8,7 +8,7 @@ using SportsStore.Domain.Entities;
 namespace SportsStore.UnitTests
 {
     [TestClass]
-    public class UnitTest7_TestingTheCart
+    public class UnitTest8_TestingTheCart
     {
        [TestMethod]
         public void Can_Add_New_Lines() {
